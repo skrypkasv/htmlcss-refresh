@@ -5,9 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HW-02</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <link rel="stylesheet" href="css/modern_normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -16,25 +19,25 @@
   <header>
 
     <!-- Navigation -->
-    <nav>
+    <nav class="nav">
       <!-- Logo -->
-      <a class="logo" href="./index.html">WebStudio</a>
+      <a class="logo" href="./index.html"><span class="web">Web</span>Studio</a>
       <!-- nav menu -->
-      <ul>
-        <li>
+      <ul class="nav-menu">
+        <li class="nav-link">
           <a href="./index.html">Studio</a>
         </li>
-        <li>
+        <li class="nav-link">
           <a href="./portfolio.html" target="_blank">Portfolio</a>
         </li>
-        <li>
+        <li class="nav-link">
           <a href="">Contacts</a>
         </li>
       </ul>
       <!-- Contacts -->
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+      <ul class="nav-contacts">
+        <li class="nav-link"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li class="nav-link"><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
       </ul>
     </nav>
   </header>
@@ -43,37 +46,37 @@
   <main>
     <!-- Hero -->
     <section class="hero">
-      <h1>Effective Solutions for Your Business</h1>
-      <button type="button">Order Service</button>
+      <h1 class="hero-title">Effective Solutions for Your Business</h1>
+      <button class="hero-btn" type="button">Order Service</button>
     </section>
 
     <!-- Properties -->
-    <section class="properties">
-      <h2>Our properties</h2>
+    <section class="section properties">
+      <h2 class="section-title">Our properties</h2>
       <ul>
         <li>
-          <h3>Strategy</h3>
+          <h3 class="property-title">Strategy</h3>
           <p>
             Our goal is to identify the business problem to walk away with the
             perfect and creative solution.
           </p>
         </li>
         <li>
-          <h3>Punctuality</h3>
+          <h3 class="property-title">Punctuality</h3>
           <p>
             Bring the key message to the brand's audience for the best price
             within the shortest possible time.
           </p>
         </li>
         <li>
-          <h3>Diligence</h3>
+          <h3 class="property-title">Diligence</h3>
           <p>
             Research and confirm brands that present the strongest digital
             growth opportunities and minimize risk.
           </p>
         </li>
         <li>
-          <h3>Technologies</h3>
+          <h3 class="property-title">Technologies</h3>
           <p>
             Design practice focused on digital experiences. We bring forth a
             deep passion for problem-solving.
@@ -83,28 +86,65 @@
     </section>
 
     <!-- Our team -->
-    <section class="our team">
-      <h2>Our Team</h2>
+    <section class="section team">
+      <h2 class="section-title">Our Team</h2>
       <ul>
-        <li>
+        <li class="card">
           <img src="./images/team/mark_guerrero.jpg" alt="Mark Guerrero" width="264">
-          <h3>Mark Guerrero</h3>
-          <p>Product Designer</p>
+          <h3 class="card-name">Mark Guerrero</h3>
+          <p class="card-role">Product Designer</p>
         </li>
-        <li>
+        <li class="card">
           <img src="./images/team/tom_ford.jpg" alt="Tom Ford" width="264">
-          <h3>Tom Ford</h3>
-          <p>Frontend Developer</p>
+          <h3 class="card-name">Tom Ford</h3>
+          <p class="card-role">Frontend Developer</p>
         </li>
-        <li>
+        <li class="card">
           <img src="./images/team/camila_garcia.jpg" alt="Camila Garcia" width="264">
-          <h3>Camila Garcia</h3>
-          <p>Marketing</p>
+          <h3 class="card-name">Camila Garcia</h3>
+          <p class="card-role">Marketing</p>
         </li>
-        <li>
+        <li class="card">
           <img src="./images/team/daniel_wilson.jpg" alt="Daniel Wilson" width="264">
-          <h3>Daniel Wilson</h3>
-          <p>UI Designer</p>
+          <h3 class="card-name">Daniel Wilson</h3>
+          <p class="card-role">UI Designer</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Our portfolio -->
+    <section class="section portfolio">
+      <h2 class="section-title">Our Portfolio</h2>
+      <ul>
+        <li class="card">
+          <img src="./images/portfolio/banking.jpg" alt="BankApp" width="360">
+          <h3 class="card-name">Banking App</h3>
+          <p class="card-role">App</p>
+        </li>
+        <li class="card">
+          <img src="./images/portfolio/payment.jpg" alt="Cashless payment" width="360">
+          <h3 class="card-name">Cashless Payment</h3>
+          <p class="card-role">Marketing</p>
+        </li>
+        <li class="card">
+          <img src="./images/portfolio/meditation.jpg" alt="laptop and mobile" width="360">
+          <h3 class="card-name">Meditaion App</h3>
+          <p class="card-role">App</p>
+        </li>
+        <li class="card">
+          <img src="./images/portfolio/taxi.jpg" alt="steering wheel" width="360">
+          <h3 class="card-name">Taxi Service</h3>
+          <p class="card-role">Marketing</p>
+        </li>
+        <li class="card">
+          <img src="./images/portfolio/screen.jpg" alt="mobile screen" width="360">
+          <h3 class="card-name">Screen Illustrations</h3>
+          <p class="card-role">Design</p>
+        </li>
+        <li class="card">
+          <img src="./images/portfolio/girl.jpg" alt="girl" width="360">
+          <h3 class="card-name">Online Courses</h3>
+          <p class="card-role">Marketing</p>
         </li>
       </ul>
     </section>
@@ -113,7 +153,7 @@
   <!-- Footer -->
   <footer>
     <!-- Logo -->
-    <a class="logo" href="./index.html">WebStudio</a>
+    <a class="foot logo" href="./index.html"><span class="web">Web</span>Studio</a>
     <p>
       Increase the flow of customers and sales for your business with digital
       marketing & growth solutions.
