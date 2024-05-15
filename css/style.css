@@ -52,6 +52,7 @@ Roboto (400, 500, 700)
   --alter-bcg-color: #f4f4fd;
   --footer-bcg-color: #2e2f42;
   --hero-bcg-color: #2e2f42;
+  --hover-color: #404bbf;
 }
 
 /* common styles */
@@ -59,7 +60,6 @@ body {
   background-color: var(--base-bcg-color);
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--base-text-color);
@@ -119,8 +119,9 @@ a {
   color: var(--accent-text-color);
 }
 
-.nav-contacts {
-  font-weight: 400;
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--hover-color);
 }
 
 /*  */
@@ -148,7 +149,7 @@ a {
 
 .hero-title {
   font-size: 56px;
-  line-height: 1.07;
+  line-height: 1.08;
 }
 
 .hero-btn {
@@ -157,6 +158,11 @@ a {
   letter-spacing: 0.04em;
   color: var(--white-text-color);
   background-color: var(--iris-color);
+  cursor: pointer;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--hover-color);
 }
 
 /*  */
